@@ -1,0 +1,11 @@
+{
+  "name": "launch_x-refactoring",
+  "version": "1.0.0",
+  "description": "Ejercicio 1 de la semana 4 del programa launchx - backend: NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node .node_modules/.bin/jest"
+  },
+  "author": "mabvmex",
+  "license": "ISC"
+}
