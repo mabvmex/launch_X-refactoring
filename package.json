@@ -4,8 +4,11 @@
   "description": "Ejercicio 1 de la semana 4 del programa launchx - backend: NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "node .node_modules/.bin/jest"
+    "test": "node ./node_modules/.bin/jest"
   },
   "author": "mabvmex",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
 }
