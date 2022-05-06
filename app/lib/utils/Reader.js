@@ -9,6 +9,5 @@ class Reader {
 
 }
 
-// console.log(Reader.readJsonFile("./app/lib/utils/explorers.json"));
-
+// console.log(Reader.readJsonFile("explorers.json"));
 module.exports = Reader;

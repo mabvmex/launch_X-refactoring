@@ -1,29 +1,29 @@
-const Reader = require("../../../app/lib/utils/Reader");
-const explorers = Reader.readJsonFile('explorer.json')
+class ExplorerService {
+  static filterBygitHubUserName(explorers, mission) {
+    const explorersInNode = explorers.filter(
+      (explorer) => explorer.mission == mission
+    );
+    return explorersInNode;
+  }
 
-  class ExplorerService {
-    static filterByMission(explorer, mission) {
-      const explorersInNode = explorers.filter(
-        (explorer) => explorer.mision == "node"
-      );
-      return explorersInNode;
-    }
+  static getAmountOfExplorersByMission(explorers, mission) {
+    const explorersInNodeToGetUsernames = explorers.filter(
+      (explorer) => explorer.mission == mission
+    );
+    return explorersInNodeToGetUsernames.length;
+  }
 
-    static getAmountOfExploreresByMission(explorers, mission) {
-      const explorersInNodeToGetUsernames = explorers.filter(
-        (explorer) => explorer.mission == "node"
-      );
-      return explorersInNodeToGetUsernames;
-    }
-
-    static getExplorersUserNameByMission(explorers, mission) {
-      const explorersInNode = explorersInNodeToGetUsernames.map(
-        (explorer) => explorer.githubusername
-      );
-      return explorersInNode;
-    }
-  };
-
-ExplorerService.filterByMission();
+  static getExplorersUsernamesByMission(explorers, mission) {
+    const explorersInNodeGithubUsername = explorers.filter(
+      (explorer) => explorer.mission == mission
+    );
+    const usernames = explorersInNodeGithubUsername.map(
+      (explorersInNodeGithubUsername) =>
+        explorersInNodeGithubUsername.githubUsername
+    );
+    // return explorersInNodeGithubUsername/* [0].githubUsername; */
+    return usernames;
+  }
+}
 
 module.exports = ExplorerService;
