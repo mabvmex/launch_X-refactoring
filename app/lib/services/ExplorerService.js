@@ -1,11 +1,13 @@
 class ExplorerService {
-  static filterBygitHubUserName(explorers, mission) {
+  static filterByMission(explorers, mission) {
     const explorersInNode = explorers.filter(
       (explorer) => explorer.mission == mission
     );
-    return explorersInNode;
+    const usernamesInMission = explorersInNode.map(
+      (explorers) => explorers.name
+    );
+    return usernamesInMission;
   }
-
   static getAmountOfExplorersByMission(explorers, mission) {
     const explorersInNodeToGetUsernames = explorers.filter(
       (explorer) => explorer.mission == mission
@@ -14,15 +16,15 @@ class ExplorerService {
   }
 
   static getExplorersUsernamesByMission(explorers, mission) {
-    const explorersInNodeGithubUsername = explorers.filter(
+    const explorersInNodeToGetUsernames = explorers.filter(
       (explorer) => explorer.mission == mission
     );
-    const usernames = explorersInNodeGithubUsername.map(
-      (explorersInNodeGithubUsername) =>
-        explorersInNodeGithubUsername.githubUsername
+    const usernamesInNode = explorersInNodeToGetUsernames.map(
+      (explorersInNodeToGetUsernames) =>
+        explorersInNodeToGetUsernames.githubUsername
     );
-    // return explorersInNodeGithubUsername/* [0].githubUsername; */
-    return usernames;
+    // return explorersInNodeToGetUsernames/* [0].githubUsername; */
+    return usernamesInNode;
   }
 }
 
