@@ -1,5 +1,6 @@
 class ExplorerService {
   static filterByMission(explorers, mission) {
+
     const explorersInNode = explorers.filter(
       (explorer) => explorer.mission == mission
     );
@@ -7,6 +8,7 @@ class ExplorerService {
       (explorers) => explorers.name
     );
     return usernamesInMission;
+    
   }
   static getAmountOfExplorersByMission(explorers, mission) {
     const explorersInNodeToGetUsernames = explorers.filter(
@@ -23,9 +25,9 @@ class ExplorerService {
       (explorersInNodeToGetUsernames) =>
         explorersInNodeToGetUsernames.githubUsername
     );
-    // return explorersInNodeToGetUsernames/* [0].githubUsername; */
     return usernamesInNode;
   }
+
 }
 
 module.exports = ExplorerService;

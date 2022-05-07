@@ -4,7 +4,7 @@ const ExplorerService = require('./app/lib/services/ExplorerService');
 const explorers = Reader.readJsonFile("explorers.json")
 // console.log(explorers);
 
-const mission = 'java'
+const mission = 'node'
 
 
 const inMission = ExplorerService.filterByMission(explorers, mission);
