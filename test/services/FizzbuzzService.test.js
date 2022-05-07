@@ -21,8 +21,8 @@ describe("Unit Test for FizzbuzzService", () => {
   })
   
   test("4.- Validaciones para FizzbuzzService CON multiplo de 3 Y 5", () => {
-    const explorerFizzBuzz = {name: "Carlo", score: true }
-    const explorer = FizzbuzzService.applyValidationInExplorer(explorerFizzBuzz);
-    expect(explorerFizzBuzz.trick).toBe('FIZZBUZZ')
+    const explorer15 = {name: "Carlo", score: 15 }
+    const explorer = FizzbuzzService.applyValidationInExplorer(explorer15);
+    expect(explorer15.trick).toBe('FIZZBUZZ')
   })
 })
