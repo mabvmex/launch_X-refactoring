@@ -5,11 +5,13 @@ const rawdata = fs.readFileSync("explorers.json");
 const explorers = JSON.parse(rawdata);
 
 // Part 2: Get the quantity of explorers names in node
+// eslint-disable-next-line no-unused-vars
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
 // console.log(explorersInNode.length)
 
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
+// eslint-disable-next-line no-unused-vars
 const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
 // console.log(usernamesInNode)
 
