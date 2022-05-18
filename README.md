@@ -11,23 +11,21 @@
 |localhost:3000/v1/explorers/:mission | localhost:3000/v1/explorers/node|
 |localhost:3000/v1/explorers/amount/:mission | localhost:3000/v1/explorers/amount/node|
 |localhost:3000/v1/explorers/usernames/:mission | localhost:3000/v1/explorers/usernames/node|
-
 <br>
 
 - Las funciones y los componentes que se crean son los siguientes:
-
+<br>
 
 |Clase Reader|
 |---|
 |readJsonFile(filePath) |
+<hr>
 
 |Clase FizzbuzzService|
 |---|
 |applyValidationInExplorer(explorers, mission)|
+<hr>
 
-
-
-       
 |clase ExplorerService|
 |---| 
 |filterByMission(explorers, mission)|
