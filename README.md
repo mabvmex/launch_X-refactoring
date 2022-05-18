@@ -1,4 +1,4 @@
-# 1.- Ejercicio de refactorización de código para "Visual partner-Ship"
+# 1.- Ejercicio de refactorización de código para "Visual partner-Ship" <br>[Semana 4] 
 
 - Se obtiene una lista de `explorers` que están en cada misión: `node` o `java`
 - Se obtiene la cantidad de `explorers` que forman cada una de las misiones.
